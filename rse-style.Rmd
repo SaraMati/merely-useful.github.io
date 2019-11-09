@@ -14,6 +14,8 @@ the easier it is to find things and make sense of them.
 This lesson therefore describes some widely-used rules of Python programming style,
 and some features of the language that you can use to make your programs more flexible and more readable.
 
+
+## Code review
 The biggest benefit of having a second person work on a programming project
 is therefore not getting twice as much code written,
 but having code reviewed.
@@ -119,6 +121,16 @@ Be specific in replies to reviewers.
 Thank your reviewers.
 :   If someone has taken the time to read your code carefully,
     thank them for doing it.
+
+## Code review using Github
+Code review is of course built on good version control. So, by now, you probably use Github or other resources (e.g. Gitlab) to do version control and share the work with collaborators. You can further utilize Github for reviewing each other's code. Using Github, it means that you have a repo and then forked versions of that repo between the collaborators. Let's say you are contributing to a repo, and you are responsible for a specific part of the project. You wirte the required scripts for that part and commit your changes to your fork. You then want to integrate your part to the main repo, so you do a pull request to the repo you forked from. The code review happens between your pull request and before it is merged in the following steps:
+-The author (you) can manually request a review on the pending PR 
+-The reviewer can make general or line-by-line comments
+-Further discussion can continue under each comment thread
+-the author makes changes to the code as per the decisions reached in comments
+-author or reviewer makes the merge (whether the author of the code, or the reviewer does the merge should be communicated between members of the project prior to the review process)
+
+Note that repos can be configured to require a review before a pull request can be merged.
 
 ## What are the standard rules of good style for Python programs? {#rse-style-pep8}
 
